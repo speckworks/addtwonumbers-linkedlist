@@ -1,5 +1,10 @@
 
-  //Definition for singly-linked list.
+//Definition for singly-linked list.
+Class Node(){
+  constructor()
+  this.val
+  this.next
+}
  function ListNode(val, next) {
       this.val = (val === undefined ? 0 : val)
       this.next = (next === undefined ? null : next)
@@ -19,6 +24,8 @@ const addTwoNumbers = (l1, l2) => {
   if (carry) now.next = new ListNode(carry);
   return head.next;
 };
+
+
 
 addTwoNumbers([1,2,3], [8,9,1]);
 
